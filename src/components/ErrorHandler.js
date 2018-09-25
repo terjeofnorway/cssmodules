@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
 class ErrorHandler extends Component {
-  state = { error: false}
+  state = { error: false }
 
   componentDidCatch() {
-    this.setState({error: true});
+    this.setState({ error: true });
   }
 
   render() {
-    if (this.state.error) { return <div>Error</div> }
+    if (this.state.error) { return <div>Error</div>; }
 
     return this.props.children;
   }

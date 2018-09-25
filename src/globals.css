@@ -1,0 +1,10 @@
+:root {
+    --primary50: #E3F2FD;
+    --primary100: #BBDEFB;
+    --primary200: #90CAF9;
+}
+
+.defaultHeaderSize {
+    font-size: 2em;
+    color: var(--primary50);
+}
