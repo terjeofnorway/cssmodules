@@ -21,10 +21,14 @@
     }
   },
   "dependencies": {
+    "moment": "^2.22.2",
     "react": "16.5.2",
     "react-dom": "16.5.2",
     "react-hot-loader": "4.3.11",
-    "react-router-dom": "4.3.0"
+    "react-redux": "^5.0.7",
+    "react-router-dom": "4.3.0",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^3.0.1"
   },
   "devDependencies": {
     "@babel/cli": "7.1.0",
