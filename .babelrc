@@ -1,4 +1,14 @@
 {
-  "presets": ["env", "react"],
-  "plugins": ["transform-class-properties", "react-css-modules"]
+  "presets": [
+    "@babel/preset-react",
+    [ "@babel/preset-env", {
+      "targets": {
+        "browsers": "> 2%"
+      }
+    }]
+  ],
+
+  "plugins": [
+    "react-hot-loader/babel"
+  ]
 }

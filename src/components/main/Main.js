@@ -6,10 +6,14 @@ import logo from './logo.svg';
 import main from './Main.css';
 
 class App extends Component {
-  state = { error: false }
+  constructor() {
+    super();
+    this.state = { error: false };
+  }
 
   render() {
-    if (this.state.error) { return <div>Error</div>; }
+    const { error } = this.state;
+    if (error) { return <div>Error</div>; }
 
     return (
       <div className={main.Main}>
