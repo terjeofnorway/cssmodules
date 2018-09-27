@@ -16,8 +16,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "yarn precommit",
-      "pre-push": "yarn prepush",
-      "...": "..."
+      "pre-push": "yarn prepush"
     }
   },
   "dependencies": {
