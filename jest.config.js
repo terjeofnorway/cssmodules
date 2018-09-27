@@ -4,4 +4,5 @@ module.exports = {
     '!**/node_modules/**',
     '!**/vendor/**',
   ],
+  setupTestFrameworkScriptFile: './jest.setup.js',
 };
