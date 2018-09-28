@@ -7,7 +7,7 @@ const UserGreeting = (props) => {
   const { name } = props;
   return (
     <h1 className={greeting.WarmFuzzyHeader}>
-      Hello {name}
+      Hello {name} !
     </h1>
   );
 };

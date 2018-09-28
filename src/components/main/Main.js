@@ -8,11 +8,16 @@ import main from './Main.css';
 class App extends Component {
   constructor() {
     super();
-    this.state = { error: false };
+    this.state = { error: false, isExtraInformationVisible: false };
   }
 
+  showExtraInformation = () => {
+    this.setState({ isExtraInformationVisible: true });
+  };
+
   render() {
-    const { error } = this.state;
+    const { error, isExtraInformationVisible } = this.state;
+    const { showExtraInformation } = this;
     if (error) { return <div>Error</div>; }
 
     return (
@@ -20,11 +25,13 @@ class App extends Component {
         <header className={main.MainHeader}>
           <img src={logo} className={main.MainLogo} alt="logo" />
           <h1 className={main.MainTitle}>Welcome to React</h1>
+          <button type="button" onClick={showExtraInformation}>Tell me more!</button>
         </header>
         <UserGreeting />
-        <p className={main.MainIntro}>
+        <div className={main.MainIntro}>
           Welcome to the worlds spiffies webapp.
-        </p>
+          { isExtraInformationVisible && <div>Some extra information goes here.</div>}
+        </div>
       </div>
     );
   }
