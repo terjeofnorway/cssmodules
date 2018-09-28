@@ -1,0 +1,4 @@
+.WarmFuzzyHeader {
+    composes: defaultHeaderSize from '../../globals.css';
+    color: purple;
+}
